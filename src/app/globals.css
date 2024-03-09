@@ -177,6 +177,7 @@ padding: 50px 0px;
   border: 1px solid var(--whitebg);
   border-radius: 5px;
   padding: 3px;
+  outline: var(--none);
 }
 .footer_navigation_section .input_section button{
   border: var(--none);
@@ -185,4 +186,5 @@ padding: 50px 0px;
   background-color: var(--greenbg);
   color: var(--boldFonts);
   font-weight: 400;
+  /* margin */
 }
