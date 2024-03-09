@@ -87,7 +87,10 @@ export default function RootLayout({
                     <h1>We need you Help!</h1>
                     <p>To bring relief when & where needed most</p>
 
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta exercitationem maiores architecto tempora nam nesciunt eligendi pariatur, sequi temporibus cum recusandae? Corrupti expedita placeat quas voluptatibus cumque id eius cupiditate.</p>
+                    <p className="p-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                      Soluta exercitationem maiores architecto tempora nam nesciunt eligendi pariatur,
+                      sequi temporibus cum recusandae? 
+                      Corrupti expedita placeat quas voluptatibus cumque id eius cupiditate.</p>
 
                     <div className="donate_need_help_button">
                       <button className="nav-link " aria-="true"> <img width="30" height="30" src="https://img.icons8.com/dotty/80/000000/donate.png" alt="donate" />Donate now</button>
