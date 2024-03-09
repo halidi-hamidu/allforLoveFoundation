@@ -16,6 +16,8 @@ body {
   
   margin: 0;
   padding: 0;
+
+  overflow-y:auto;
   
 }
 /* header section */
@@ -48,7 +50,7 @@ body {
 
 /* start: footer_section */
 .footer_section .section_need_your_help{
-  height: 400px;
+  /* height: 400px; */
   background-color: var(--greenbg);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.6), rgba(0,0,0,0.2)), url('/images/needHelp.jpg');
   background-size: cover;
@@ -105,4 +107,82 @@ body {
  }
  .social_media_links{
   padding-top: 50px;
+  padding-left: 20px;
  }
+ .social_media_links img{
+  width: 40px;
+  height: 40px;
+  padding: 7px;
+ }
+
+ .footer_navigation_section .line{
+  width: 79%;
+  margin: auto;
+  background-color: var(--greenbg);
+  padding: 0.1px;
+ }
+ .copyright_section{
+  /* display: flex; */
+  /* font-size: 14px; */
+  text-align: center;
+  line-height: 4px;
+  padding: 30px 0px;
+  color: var(--whitebg);
+  font-weight: 200;
+ }
+
+ .quickLink{
+  color: var(--whitebg);
+  font-weight: 400;
+  padding:50px 20px;
+  font-size: 20px;
+
+ }
+ .footer_navigation_section ul li{
+  padding: 7px !important;
+  color: var(--whitebg);
+  font-weight: 200;
+
+ }
+
+ .footer_navigation_section .campaign{
+  padding: 50px 20px;
+ }
+ .footer_navigation_section .campaign p{
+  padding: 50px 0px;
+  color: var(--whitebg);
+    font-weight: 200;
+
+ }
+ .footer_navigation_section .campaign h6{
+  color: var(--whitebg);
+    font-weight: 400;
+    font-size: 20px;
+ }
+.footer_navigation_section .get_intouch{
+  padding: 50px 20px;
+}
+.footer_navigation_section .get_intouch h6{
+  color: var(--whitebg);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.footer_navigation_section .get_intouch p{
+padding: 50px 0px;
+  color: var(--whitebg);
+  font-weight: 200;
+}
+.footer_navigation_section .input_section input{
+  border: 1px solid var(--whitebg);
+  border-radius: 5px;
+  padding: 3px;
+}
+.footer_navigation_section .input_section button{
+  border: var(--none);
+  border-radius: 5px;
+  padding: 9px 20px;
+  background-color: var(--greenbg);
+  color: var(--boldFonts);
+  font-weight: 400;
+}

@@ -1,10 +1,12 @@
+
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Head from 'next/head';
+// import React, {useState} from "react";
 
-
+// 
 export const metadata: Metadata = {
   title: "Home - all for love",
   description: "all for love foundation",
@@ -15,6 +17,13 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+  // const [subscribeInput, setSubscribeInput] = useState('');
+
+
+
+
+
   return (
     <html lang="en">
       <Head>
@@ -108,18 +117,50 @@ export default function RootLayout({
                       <h6> +255 674 585 700</h6>
                     </div>
                     <div className="social_media_links">
-                      <Image src='/images/call.png' height={20} width={20} alt="call"></Image>
-                      <Image src='/images/call.png' height={20} width={20} alt="call"></Image>
-                      <Image src='/images/call.png' height={20} width={20} alt="call"></Image>
-                      <Image src='/images/call.png' height={20} width={20} alt="call"></Image>
+                      <a href=""><Image src='/images/instagram.png' height={20} width={20} alt="call"></Image></a>
+                      <a href=""><Image src='/images/facebook.png' height={20} width={20} alt="call"></Image></a>
+                      <a href=""><Image src='/images/x.png' height={20} width={20} alt="call"></Image></a>
+                      
                     </div>
                   </div>
                 </div>
-                <div className="col-md-1"></div>
-                <div className="col-md-1"></div>
-                <div className="col-md-3"></div>
-                <div className="col-md-3"></div>
+                <div className="col-md-2">
+                  <h6 className="quickLink">Quick link</h6>
+                  <ul>
+                    <li className="p-1"><a className="nav-link" href="#">Home</a></li>
+                    <li><a className="nav-link" href="#">About</a></li>
+                    <li><a className="nav-link" href="#">Branch</a></li>
+                    <li><a className="nav-link" href="#">Campaign</a></li>
+                    <li><a className="nav-link" href="#">Contact</a></li>
+                    <li><a className="nav-link" href="#">Events</a></li>
+                  </ul>
+                </div>
+                {/* <div className="col-md-1"></div> */}
+                <div className="col-md-3">
+                  <div className="campaign">
+                    <h6>Latest Campaign</h6>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, quo!
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md">
+                  <div className="get_intouch">
+                    <h6>Get intouch</h6>
+                    <p>Don't miss out – be informed, be involved. Subscribe now</p>
+
+                    <div className="input_section">
+                      {/* <input type="text" name="" id="" value={subscribeInput} onChange={ e => setSubscribeInput(e.target.value)} placeholder="Email"/> */}
+                      <input type="text" name="" id="" placeholder="Email" />
+                      <button className="btn btn-success mt-1">Subscribe</button>
+                    </div>
+                  </div>
+                </div>
               </div>
+            </div>
+            <div className="line"></div>
+            <div className="copyright_section">
+              <p>2024 &#169; copyright .All right Reserved  </p>
+              <p className=""> Developed and Maintained by allforLove Foundation</p>
             </div>
           </div>
         </div>
