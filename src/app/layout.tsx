@@ -1,16 +1,13 @@
+'use client'
 
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Image from "next/image";
 import Head from 'next/head';
-// import React, {useState} from "react";
+import React, {useState} from "react";
 
 // 
-export const metadata: Metadata = {
-  title: "Home - all for love",
-  description: "all for love foundation",
-};
+
 
 export default function RootLayout({
   children,
@@ -18,8 +15,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  // const [subscribeInput, setSubscribeInput] = useState('');
+  const [subscribeInput, setSubscribeInput] = useState('');
 
+  const handleSubscriptions = () => {
+    console.log(subscribeInput);
+  }
 
 
 
@@ -152,9 +152,9 @@ export default function RootLayout({
                     <p>Don't miss out – be informed, be involved. Subscribe now</p>
 
                     <div className="input_section">
-                      {/* <input type="text" name="" id="" value={subscribeInput} onChange={ e => setSubscribeInput(e.target.value)} placeholder="Email"/> */}
-                      <input type="text" name="" id="" placeholder="Email" />
-                      <button className="btn btn-success mt-1">Subscribe</button>
+                      <input type="text" name="" id="" value={subscribeInput} onChange={ e => setSubscribeInput(e.target.value)} placeholder="Email"/>
+                      {/* <input type="text" name="" id="" placeholder="Email" /> */}
+                      <button className="btn btn-success mt-1" onClick={handleSubscriptions}>Subscribe</button>
                     </div>
                   </div>
                 </div>
