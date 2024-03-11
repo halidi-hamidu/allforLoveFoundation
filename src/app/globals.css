@@ -194,18 +194,27 @@ padding: 50px 0px;
 
 /* start: home_hero_section */
 .home_hero_section{
-  padding: 170px 160px;
-  background-image: linear-gradient(to-right, rgba(0,0,0,0.9), rgba(0, 0, 0, 0.9)), url('/images/heroBg2.jpg');
-  /* background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url('/images/needHelp.jpg'); */
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: center;
+  
+    background-color: var(--greenbg);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url('/images/hero.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 150px 30px;
 }
 
 .home_hero_section .inner h1{
   font-weight: 700;
   font-size: 50px;
+  padding:0px 30px;
+  text-wrap: nowrap;
+  color: var(--whitebg);
+  /* font-size: calc(200px -10px); */
+}
+.home_hero_section .inner h1, .home_hero_section p{
+  color:var(--whitebg);
+  padding:0px 40px;
   /* font-size: calc(200px -10px); */
 }
 
@@ -215,6 +224,7 @@ padding: 50px 0px;
 .how_can_you_help .inner h3{
   text-align: var(--center);
   font-weight: 400;
+  padding: 80px;
 }
 .how_can_you_help .inner_cards .make_gift_card{
   padding: 10px;
@@ -232,7 +242,7 @@ padding: 50px 0px;
   box-shadow: var(--boxShadow);
 }
 .how_can_you_help .make_gift_inner{
-  padding: 50px 30px;
+  padding: 40px 30px;
 }
 .how_can_you_help .make_gift_inner .circle h5{
  text-align: var(--center);
@@ -254,5 +264,97 @@ padding: 50px 0px;
 }
 .how_can_you_help .make_gift_inner .descriptions h6{
   font-weight: 600;
+  font-size: 18px;
 }
 /* end:how_can_you_help */
+
+/* start:breif_about_us */
+.breif_about_us{
+  padding: 180px;
+  margin: auto;
+}
+.breif_about_us .inner_section{
+  display: flex;
+}
+.breif_about_us .description{
+  box-shadow: var(--boxShadow);
+  margin-right: -110px;
+  background-color: #000804;
+  border-radius: 10px;
+  padding: 40px 20px;
+  opacity: 0.9;
+}
+.breif_about_us .description h3 {
+  margin: 0px;
+  padding: 50px 0px 0px 20px;
+  text-align: start;
+  color: var(--whitebg);
+}
+.breif_about_us .description p{
+  padding: 10px 100px 50px 20px;
+  text-align:justify;
+  color: var(--whitebg);
+  font-weight:200;
+
+}
+.breif_about_us .image_section{
+    text-align: center;
+    border-radius: 100%;
+    border: 2px solid var(--greenbg);
+    background-color: var(--whitebg);
+    margin: auto;
+    justify-content: var(--center);
+    align-items: var(--center);
+    padding: 80px;
+    box-shadow: var(--boxShadow);
+    z-index: 10;
+}
+/* end:breif_about_us */
+
+/* start:brief_latest_events */
+
+.brief_latest_events{
+  background-color: var(--darkGreenBg);
+  padding: 20px;
+}
+.brief_latest_events h3{
+  text-align: var(--center);
+  color: var(--whitebg);
+  padding: 50px;
+  font-weight: 400;
+}
+.brief_latest_events .events{
+  /* padding: 200px; */
+  background-color: var(--darkGreenBg);
+}
+.brief_latest_events .inner_section{
+  background-color: var(--whitebg);
+  box-shadow: var(--boxShadow);
+  margin-top: 10px;
+}
+.brief_latest_events .inner_section img{
+  /* padding: 200px; */
+  width: 100%;
+  background-color: var(--whitebg);
+}
+.brief_latest_events .inner_section .descriptions{
+  padding: 20px;
+  width: 100%;
+  background-color: var(--whitebg);
+  border-radius: 10px;
+
+}
+.brief_latest_events .other_events{
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--whitebg);
+  margin-top: 10px;
+}
+.brief_latest_events .image_section img{
+  width: 700px;
+  height: 100%;
+}
+.brief_latest_events .descriptions{
+  padding:10px 20px;
+}
+/* end:brief_latest_events */

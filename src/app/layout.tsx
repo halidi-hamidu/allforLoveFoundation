@@ -18,6 +18,7 @@ export default function RootLayout({
   const [subscribeInput, setSubscribeInput] = useState('');
 
   const handleSubscriptions = () => {
+    window.alert({subscribeInput});
     console.log(subscribeInput);
   }
 
@@ -28,6 +29,8 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
       </Head>
       <body>
         <div className="header_navigation">
@@ -167,7 +170,11 @@ export default function RootLayout({
             </div>
           </div>
         </div>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+          <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
       </body>
     </html>
   );
