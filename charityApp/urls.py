@@ -13,3 +13,4 @@ urlpatterns = [
     path('campaign', CampaignListView.as_view(), name = 'campaign'),
     path('campaign/<uuid:pk>/', CampaignAPIView.as_view(), name = 'campaign'),
 ]
+    
