@@ -358,3 +358,68 @@ padding: 50px 0px;
   padding:10px 20px;
 }
 /* end:brief_latest_events */
+
+
+/* start:campaign_section */
+.campaign_section{
+  padding: 30px 0px;
+}
+.campaign_section .heading{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+.campaign_section .heading h3{
+font-weight: 400;
+padding: 33px 10px;
+}
+.campaign_section .heading input{
+font-weight: 400;
+padding: 10px 20px;
+border: 1px solid var(--greenbg);
+outline: none;
+border-radius: 10px;
+}
+
+.campaign_section .inner{
+  background-color: var(--whitebg);
+  box-shadow: var(--boxShadow);
+  height: 420px;
+  overflow: hidden;
+  margin-top: 10px;
+  text-align: center;
+}
+.campaign_section .inner img{
+  width: 100%;
+  height: 200px;
+}
+.campaign_section .inner h5{
+  color: var(--boldFonts);
+  padding: 10px 10px 10px 10px;
+  font-weight: 420;
+  text-align: left;
+  background-color: var(--darkGreenBg);
+  color: var(--whitebg);
+  opacity: 0.8;
+}
+.campaign_section .inner p{
+  color: var(--boldFonts);
+  padding: 20px 10px 0px 10px;
+  text-align: justify;
+}
+.campaign_section .inner a{
+  color: var(--boldFonts);
+  padding: 10px ;
+  text-decoration: var(--none);
+  border: 1px solid var(--greenbg);
+  border-radius: 10px;
+  /* justify-content: var(--center); */
+  /* text-align: var(--center); */
+}
+.campaign_section .inner a:hover{
+  color: var(--whitebg);
+  padding: 10px;
+  background-color: var(--darkGreenBg);
+  text-decoration: var(--none);
+  opacity: 0.9;
+}

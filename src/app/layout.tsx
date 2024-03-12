@@ -62,16 +62,16 @@ export default function RootLayout({
                           </li>
                           
                           <li className="nav-item">
-                            <a className="nav-link " aria-="true">Branch</a>
+                              <a className="nav-link" href="#">Branch</a>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link " aria-="true">Campaign</a>
+                              <a className="nav-link " href="#">Campaign</a>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link " aria-="true">Contact</a>
+                              <a className="nav-link " href="#">Contact</a>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link " aria-="true">Events</a>
+                              <a className="nav-link " href="#">Events</a>
                           </li>
                           
                         </ul>
