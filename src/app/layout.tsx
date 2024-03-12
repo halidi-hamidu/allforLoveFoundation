@@ -5,6 +5,7 @@ import "./globals.css";
 import Image from "next/image";
 import Head from 'next/head';
 import React, {useState} from "react";
+import {motion , AnimatePresence} from 'framer-motion';
 
 // 
 
@@ -32,7 +33,14 @@ export default function RootLayout({
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
       </Head>
-      <body>
+      <AnimatePresence>
+      <motion.body
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        exit={{opacity:0, y:15}}
+        transition={{delay:0.25}}
+      
+      >
         <div className="header_navigation">
           <div className="container">
             <div className="row">
@@ -175,7 +183,8 @@ export default function RootLayout({
         <script>
           AOS.init();
         </script>
-      </body>
+      </motion.body>
+      </AnimatePresence>
     </html>
   );
 }

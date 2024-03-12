@@ -300,7 +300,7 @@ padding: 50px 0px;
 .breif_about_us .image_section{
     text-align: center;
     border-radius: 100%;
-    border: 2px solid var(--greenbg);
+    border: 2px solid var(--whitebg);
     background-color: var(--whitebg);
     margin: auto;
     justify-content: var(--center);
