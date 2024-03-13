@@ -65,3 +65,16 @@ class Subscribers(models.Model):
 
     def __str__(self):
         return str(self.subscribers_email)
+
+class Donation(models.Model):
+
+    id = models.UUIDField(
+    primary_key=True, default=uuid.uuid4, editable=False, unique=True)  
+
+    phone_number = models.IntegerField()
+
+    class Meta:
+        verbose_name_plural = "Donation list"
+
+    def __str__(self):
+        return str(self.phone_number)
