@@ -25,7 +25,11 @@ body {
 /* header section */
 .header_navigation{
   background-color: var(--whitebg);
-  box-shadow: var(--boxShadow)
+  box-shadow: var(--boxShadow);
+  position: fixed;
+  top:0px;
+  width: 100%;
+  z-index: 10000;
 }
 .bg-body-tertiary{
     background-color: var(--whitebg);
@@ -361,6 +365,18 @@ padding: 50px 0px;
 
 
 /* start:campaign_section */
+.campaign_section_hero_setion{
+  padding: 200px 150px;
+  text-align: var(--center);
+  background-color: var(--darkGreenBg);
+  color: var(--whitebg);
+}
+.campaign_section_hero_setion h1{
+  font-weight: 500;
+  /* line-height: 50px; */
+  /* text-wrap: nowrap;  */
+  text-align: var(--center);
+}
 .campaign_section{
   padding: 30px 0px;
 }
@@ -413,8 +429,7 @@ border-radius: 10px;
   text-decoration: var(--none);
   border: 1px solid var(--greenbg);
   border-radius: 10px;
-  /* justify-content: var(--center); */
-  /* text-align: var(--center); */
+
 }
 .campaign_section .inner a:hover{
   color: var(--whitebg);
@@ -422,4 +437,98 @@ border-radius: 10px;
   background-color: var(--darkGreenBg);
   text-decoration: var(--none);
   opacity: 0.9;
+}
+/* end:campaign_section */
+
+
+
+/* Media query for tablets (e.g., iPad) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .some-element {
+    font-size: 18px;
+    /* Add other tablet-specific styles here */
+  }
+}
+
+/* Media query for phones (e.g., iPhone) */
+@media only screen and (max-width: 767px) {
+/* start:campaign_section */
+  .campaign_section {
+    padding: 30px 0px;
+  }
+  .campaign_section_hero_setion h1 {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    /* text-wrap: nowrap;  */
+    text-align: var(--center);
+  }
+
+  .campaign_section .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .campaign_section .heading h3 {
+    font-weight: 400;
+    padding: 33px 10px;
+  }
+
+  .campaign_section .heading input {
+    font-weight: 400;
+    padding: 10px 20px;
+    border: 1px solid var(--greenbg);
+    outline: none;
+    border-radius: 10px;
+  }
+
+  .campaign_section .inner {
+    background-color: var(--whitebg);
+    box-shadow: var(--boxShadow);
+    height: 420px;
+    overflow: hidden;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .campaign_section .inner img {
+    width: 100%;
+    height: 255px;
+  }
+
+  .campaign_section .inner h5 {
+    color: var(--boldFonts);
+    padding: 10px 10px 10px 10px;
+    font-weight: 420;
+    text-align: left;
+    background-color: var(--darkGreenBg);
+    color: var(--whitebg);
+    opacity: 0.8;
+  }
+
+  .campaign_section .inner p {
+    color: var(--boldFonts);
+    padding: 20px 10px 0px 10px;
+    text-align: justify;
+  }
+
+  .campaign_section .inner a {
+    color: var(--boldFonts);
+    padding: 10px;
+    text-decoration: var(--none);
+    border: 1px solid var(--greenbg);
+    border-radius: 10px;
+
+  }
+
+  .campaign_section .inner a:hover {
+    color: var(--whitebg);
+    padding: 10px;
+    background-color: var(--darkGreenBg);
+    text-decoration: var(--none);
+    opacity: 0.9;
+  }
+
+  /* end:campaign_section */
 }

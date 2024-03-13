@@ -55,23 +55,23 @@ export default function RootLayout({
                       <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0 navigation_list">
                           <li className="nav-item">
-                            <a className="nav-link active" aria-current="page" href="#">Home</a>
+                            <a className="nav-link active" aria-current="page" href="/">Home</a>
                           </li>
                           <li className="nav-item">
-                            <a className="nav-link" href="#">About</a>
+                            <a className="nav-link" href="/About">About</a>
                           </li>
                           
                           <li className="nav-item">
-                              <a className="nav-link" href="#">Branch</a>
+                              <a className="nav-link" href="/branches">Branch</a>
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link " href="#">Campaign</a>
+                              <a className="nav-link " href="/campaigns">Campaign</a>
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link " href="#">Contact</a>
+                              <a className="nav-link " href="./contacts">Contact</a>
                           </li>
                           <li className="nav-item">
-                              <a className="nav-link " href="#">Events</a>
+                              <a className="nav-link " href="/events">Events</a>
                           </li>
                           
                         </ul>

@@ -23,7 +23,7 @@ export default async function CampaignList(){
                         <img className="img-fluid" src={campaign.campaign_photo} alt={campaign.campaign_photo} width={100} height={100} />
                         <h5>{campaign.campaign_title.slice(0, 30)} ...</h5>
                         <p>{campaign.campaign_description.slice(0, 30)} . . .</p>
-                        <a href="">read more</a>
+                        <a href="">Read more</a>
                     </div>
                 </div>
             ))}
