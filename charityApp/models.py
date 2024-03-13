@@ -53,3 +53,15 @@ class Branch(models.Model):
 
     def __str__(self):
         return str(self.branch_title)
+
+
+class Subsrcibers(models.Model):
+    id = models.UUIDField(
+        primary_key=True, default=uuid.uuid4, editable=False, unique=True)
+    subsriber_email = models.EmailField()
+
+    class Meta:
+        verbose_name_plural = 'Subsribers'
+
+    def __str__(self):
+        return str(self.subsriber_email)

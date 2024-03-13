@@ -4,3 +4,4 @@ from .models import *
 admin.site.register(Events)
 admin.site.register(Campaign)
 admin.site.register(Branch)
+admin.site.register(subscribers)
