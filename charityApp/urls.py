@@ -9,6 +9,8 @@ from .views import BranchListView
 from .views import BranchAPIView
 from .views import SubscribersListView
 from .views import SubscribersAPIView
+
+
 app_name = 'charityApp'
 
 urlpatterns = [
@@ -18,8 +20,8 @@ urlpatterns = [
     path('campaign/<uuid:pk>/', CampaignAPIView.as_view(), name = 'campaign'),
     path('branch/', BranchListView.as_view(), name = 'branchList'),
     path('branch/<uuid:pk>/', BranchAPIView.as_view(), name = 'branch'),
-    path('subscribers/', SubsrcibersListView.as_view(), name = 'subsriber'),
-    path('subscriber/<uuid:pk>/', SubsrcibersAPIView.as_view(), name = 'subsriber'),
+    path('subscribers/', SubscribersListView.as_view(), name = 'subsriber'),
+    path('subscriber/<uuid:pk>/', SubscribersAPIView.as_view(), name = 'subsriber'),
     
 ]
     
