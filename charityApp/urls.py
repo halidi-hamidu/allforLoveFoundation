@@ -7,8 +7,8 @@ from .views import CampaignListView
 from .views import CampaignAPIView
 from .views import BranchListView
 from .views import BranchAPIView
-from .views import SubsrcibersListView
-from .views import SubsrcibersAPIView
+from .views import SubscribersListView
+from .views import SubscribersAPIView
 app_name = 'charityApp'
 
 urlpatterns = [

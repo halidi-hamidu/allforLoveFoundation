@@ -55,13 +55,13 @@ class Branch(models.Model):
         return str(self.branch_title)
 
 
-class Subsrcibers(models.Model):
+class Subscribers(models.Model):
     id = models.UUIDField(
         primary_key=True, default=uuid.uuid4, editable=False, unique=True)
-    subsriber_email = models.EmailField()
+    subscribers_email = models.EmailField()
 
     class Meta:
-        verbose_name_plural = 'Subsribers'
+        verbose_name_plural = 'Subscribers'
 
     def __str__(self):
-        return str(self.subsriber_email)
+        return str(self.subscribers_email)

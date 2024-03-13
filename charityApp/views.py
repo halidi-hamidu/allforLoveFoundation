@@ -47,14 +47,14 @@ class BranchAPIView(generics.RetrieveUpdateDestroyAPIView):
 
 
 # start:Subsrcibers
-class SubsrcibersListView(generics.ListCreateAPIView):
-    queryset = Subsrcibers.objects.all()
-    serializer_class = SubsrcibersSerializer
+# class SubscribersListView(generics.ListCreateAPIView):
+#     queryset = Subscribers.objects.all()
+#     serializer_class = SubscribersSerializer
 
 
 
-class SubsrcibersAPIView(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Subsrcibers.objects.all()
-    serializer_class = SubsrcibersSerializer
+# class SubscribersAPIView(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = Subscribers.objects.all()
+#     serializer_class = SubscribersSerializer
 
 # end: Subsrcibers

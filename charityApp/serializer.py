@@ -2,7 +2,7 @@ from rest_framework import serializers
 from .models import Events
 from .models import Campaign
 from .models import Branch
-from .models import Subsrcibers
+from .models import Subscribers
 
 class EventsSerializer(serializers.ModelSerializer):
     class Meta:
@@ -23,7 +23,7 @@ class BranchSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 
-class SubsrcibersSerializer(serializers.ModelSerializer):
+class SubscribersSerializer(serializers.ModelSerializer):
     class Meta:
-        model  =Subsrcibers
+        model  =Subscribers
         fields = '__all__'
