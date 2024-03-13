@@ -2,8 +2,10 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Events
 from .models import Campaign
+from .models import Branch
 from .serializer import EventsSerializer
 from .serializer import CampaignSerializer
+from .serializer import BranchSerializer
 from rest_framework import generics
 
 # Create your views here.
@@ -31,3 +33,14 @@ class CampaignAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = CampaignSerializer
 
 # end: Campaign
+
+# start:Branch
+class BranchListView(generics.ListCreateAPIView):
+    queryset = Branch.objects.all()
+    serializer_class = BranchSerializer
+
+class BranchAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Branch.objects.all()
+    serializer_class = BranchSerializer
+
+# end:Branch
