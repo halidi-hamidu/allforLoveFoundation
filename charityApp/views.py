@@ -3,9 +3,11 @@ from django.http import HttpResponse
 from .models import Events
 from .models import Campaign
 from .models import Branch
+from .models import Subscribers
 from .serializer import EventsSerializer
 from .serializer import CampaignSerializer
 from .serializer import BranchSerializer
+from .serializer import SubscribersSerializer
 from rest_framework import generics
 
 # Create your views here.
@@ -47,14 +49,14 @@ class BranchAPIView(generics.RetrieveUpdateDestroyAPIView):
 
 
 # start:Subsrcibers
-# class SubscribersListView(generics.ListCreateAPIView):
-#     queryset = Subscribers.objects.all()
-#     serializer_class = SubscribersSerializer
+class SubscribersListView(generics.ListCreateAPIView):
+    queryset = Subscribers.objects.all()
+    serializer_class = SubscribersSerializer
 
 
 
-# class SubscribersAPIView(generics.RetrieveUpdateDestroyAPIView):
-#     queryset = Subscribers.objects.all()
-#     serializer_class = SubscribersSerializer
+class SubscribersAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Subscribers.objects.all()
+    serializer_class = SubscribersSerializer
 
 # end: Subsrcibers
