@@ -16,11 +16,41 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
 
-  const [subscribeInput, setSubscribeInput] = useState('');
+  const [subscribers_email, setSubscribers_email] = useState('');
 
-  const handleSubscriptions = () => {
-    window.alert({subscribeInput});
-    console.log(subscribeInput);
+  const handleSubscriptions =async(event:any) => {
+    // start; tuma data kwenda backend
+    event.preventDefault();
+    console.log(typeof subscribers_email); // Output: string
+
+    try{
+      const response = await fetch('http://localhost:8000/subscribers/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ subscribers_email })
+
+      });
+
+      // end:  tuma data kwenda backend
+
+      // start: cheki response inayorudi kutoka kwenye server
+      if (response.status === 201) {
+        console.log('Data sent successfull ', { subscribers_email } );
+      
+        setSubscribers_email('')
+      }
+      else {
+        console.error('Failed to send data');
+      }
+      // end:cheki response inayorudi kutoka kwenye server
+
+    }catch(error){
+      console.error('Error sending data:', error);
+    }
+
+
   }
 
 
@@ -61,9 +91,9 @@ export default function RootLayout({
                             <a className="nav-link" href="/About">About</a>
                           </li>
                           
-                          <li className="nav-item">
+                          {/* <li className="nav-item">
                               <a className="nav-link" href="/branches">Branch</a>
-                          </li>
+                          </li> */}
                           <li className="nav-item">
                               <a className="nav-link " href="/campaigns">Campaign</a>
                           </li>
@@ -143,7 +173,7 @@ export default function RootLayout({
                   <ul>
                     <li className="p-1"><a className="nav-link" href="#">Home</a></li>
                     <li><a className="nav-link" href="#">About</a></li>
-                    <li><a className="nav-link" href="#">Branch</a></li>
+                    {/* <li><a className="nav-link" href="#">Branch</a></li> */}
                     <li><a className="nav-link" href="#">Campaign</a></li>
                     <li><a className="nav-link" href="#">Contact</a></li>
                     <li><a className="nav-link" href="#">Events</a></li>
@@ -163,9 +193,11 @@ export default function RootLayout({
                     <p>Don't miss out – be informed, be involved. Subscribe now</p>
 
                     <div className="input_section">
-                      <input type="text" name="" id="" value={subscribeInput} onChange={ e => setSubscribeInput(e.target.value)} placeholder="Email"/>
-                      {/* <input type="text" name="" id="" placeholder="Email" /> */}
-                      <button className="btn btn-success mt-1" onClick={handleSubscriptions}>Subscribe</button>
+                        <form onSubmit={handleSubscriptions} method="post">
+                          <input type="email" name="subscribers_email" id="" value={subscribers_email} onChange={e => setSubscribers_email(e.target.value)} placeholder="Email" />
+                          {/* <input type="text" name="" id="" placeholder="Email" /> */}
+                          <button className="btn btn-success mt-1"  type="submit" >Subscribe</button>
+                      </form>
                     </div>
                   </div>
                 </div>
