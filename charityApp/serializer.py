@@ -3,7 +3,8 @@ from .models import Events
 from .models import Campaign
 from .models import Branch
 from .models import Subscribers
-from .modesl import Donation
+from .models import Donation
+from .models import GetIntouch
 
 class EventsSerializer(serializers.ModelSerializer):
     class Meta:
@@ -33,4 +34,10 @@ class SubscribersSerializer(serializers.ModelSerializer):
 class DonationSerializer(serializers.ModelSerializer):
     class Meta:
         model = Donation
+        fields = '__all__'
+
+
+class GetIntouchSerializer(serializers.ModelSerializer):
+    class Meta:
+        model = GetIntouch
         fields = '__all__'

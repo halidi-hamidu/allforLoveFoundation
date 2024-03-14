@@ -1,5 +1,6 @@
 from django.db import models
 import uuid
+from djrichtextfield.models import RichTextField
 # Create your models here.
 class Events(models.Model):
     id = models.UUIDField(
@@ -78,3 +79,14 @@ class Donation(models.Model):
 
     def __str__(self):
         return str(self.phone_number)
+
+
+class GetIntouch(models.Model):
+    id = models.UUIDField(
+    primary_key=True, default=uuid.uuid4, editable=False, unique=True)
+
+    sender_name = models.CharField(max_length = 100)
+
+    sender_email = models.EmailField()
+
+    message_body = RichTextField()

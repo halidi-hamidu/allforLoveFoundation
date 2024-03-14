@@ -5,11 +5,13 @@ from .models import Campaign
 from .models import Branch
 from .models import Subscribers
 from .models import Donation
+from .models import GetIntouch
 from .serializer import EventsSerializer
 from .serializer import CampaignSerializer
 from .serializer import BranchSerializer
 from .serializer import SubscribersSerializer
 from .serializer import DonationSerializer
+from .serializer import GetIntouchSerializer
 from rest_framework import generics
 import logging
 # Create your views here.
@@ -80,3 +82,16 @@ class DonationAPIView(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = DonationSerializer
 
 # # end:Donation
+
+
+# start:GetIntouch
+
+class GetIntouchListAPIView(generics.ListCreateAPIView):
+    queryset = GetIntouch.objects.all()
+    serializer_class = GetIntouchSerializer
+
+
+class GetIntouchAPIView(generics.RetrieveUpdateDestroyAPIView):
+    queryset = GetIntouch.objects.all()
+    serializer_class = GetIntouchSerializer
+# END:GetIntouch

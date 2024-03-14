@@ -11,6 +11,10 @@ from .views import SubscribersListView
 from .views import SubscribersAPIView
 from .views import DonationListAPIView
 from .views import DonationAPIView
+from .views import GetIntouchListAPIView
+from .views import GetIntouchAPIView
+
+
 
 
 
@@ -27,6 +31,8 @@ urlpatterns = [
     path('subscriber/<uuid:pk>/', SubscribersAPIView.as_view(), name = 'subsriber'),
     path('donations/', DonationListAPIView.as_view(), name = 'donations'),
     path('donation/<uuid:pk>/', DonationAPIView.as_view(), name = 'donation'),
+    path("comments/", GetIntouchListAPIView.as_view(), name="comments"),
+    path("comment/<uuid:pk>/", GetIntouchListAPIView.as_view(), name="comment"),
     
 ]
     
