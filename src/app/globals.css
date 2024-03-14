@@ -182,7 +182,7 @@ padding: 50px 0px;
 .footer_navigation_section .input_section input{
   border: 1px solid var(--whitebg);
   border-radius: 5px;
-  padding: 3px;
+  padding: 5px 2px;
   outline: var(--none);
 }
 .footer_naviga9ion_section .input_section button{
@@ -440,6 +440,154 @@ border-radius: 10px;
 }
 /* end:campaign_section */
 
+/* start:about_us_section */
+.hero_about_us_section{
+  /* background-color: var(--greenbg); */
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/images/aboutUs.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 60px;
+    text-align: var(--center);
+    color: var(--whitebg);
+    opacity: 0.99;
+}
+.hero_about_us_section .inner ul{
+  display: flex ;
+  text-align: center;
+  padding: 10px;
+  justify-content: var(--center);
+}
+.about_all_for_love .inner{
+  background-color: var(--whitebg);
+  box-shadow: var(--boxShadow);
+  padding: 30px 0px;
+  margin-top: 10px;
+}
+.about_all_for_love .heading{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about_all_for_love .address_section{
+  padding: 0px;
+}
+.about_all_for_love .address_section h4, p{
+  padding: 0px;
+}
+.about_all_for_love .line{
+  width: 90%;
+  background-color: var(--greenbg);
+  padding: 1px;
+  margin: auto;
+}
+.about_all_for_love .body_section{
+  padding: 30px 50px;
+  text-align: justify;
+}
+/* end:about_us_section */
+
+/* start:mission_vission_section */
+.mission_vission_section{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/images/aboutUs.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 100px 140px;
+    text-align: var(--center);
+    color: var(--whitebg);
+    opacity: 0.99;
+}
+.mission_vission_section .inner{
+  background-color: var(--whitebg);
+  padding: 10px;
+  border-radius: 10px;
+  opacity: 1;
+  color: var(--darkGreenBg);
+  box-shadow: var(--boxShadow);
+}
+/* end:mission_vission_section */
+
+/* start:hero_contact_us_section */
+.hero_contact_us_section{
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/images/aboutUs.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px 60px;
+    text-align: var(--center);
+    color: var(--whitebg);
+    opacity: 0.99;
+}
+/* end:hero_contact_us_section */
+
+
+
+/* start :contact_us_section */
+.contact_us_section{
+  background-color: var(--whitebg);
+  padding: 60px;
+  box-shadow: var(--boxShadow);
+}
+.contact_us_section .contacts{
+  background-color: var(--darkGreenBg);
+  padding: 50px 30px;
+  box-shadow: var(--boxShadow);
+  margin-left: -100px;
+  
+}
+.contact_us_section .contacts .call, 
+.contact_us_section .contacts .email,
+.contact_us_section .contacts a
+ {
+ display: flex;
+ /* justify-content: space-between; */
+ padding: 10px 0px;
+  color: var(--whitebg);
+
+}
+.contact_us_section .contacts h6{
+margin: 0px;
+padding: 0px 0px;
+}
+.contact_us_section .contacts h4{
+margin: 0px;
+padding: 20px 30px;
+color: var(--whitebg);
+}
+.contact_us_section .inner{
+  display: flex;
+  background-color: var(--whitebg);
+  box-shadow: var(--boxShadow);
+  align-items: var(--center);
+  padding: 50px 10px;
+}
+.contact_us_section .form_section{
+  padding: 20px 40px;
+  /* box-shadow: var(--boxShadow); */
+
+}
+.contact_us_section .form_section input, textarea{
+  padding: 10px 20px;
+  width: 100%;
+  margin:10px  0px;
+  border: 0.1px solid var(--darkGreenBg);
+  outline: var(--none);
+  border-radius: 10px;
+  resize: var(--none);
+  /* box-shadow: var(--boxShadow); */
+
+}
+.contact_us_section .form_section button{
+  border: 1px solid var(--none);
+  padding: 20px;
+  border-radius: 10px;
+  background-color: var(--greenbg);
+}
+/* end:contact_us_section */
 
 
 /* Media query for tablets (e.g., iPad) */
@@ -531,4 +679,29 @@ border-radius: 10px;
   }
 
   /* end:campaign_section */
+
+    /* start:mission_vission_section */
+    .mission_vission_section {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)), url('/images/aboutUs.jpg');
+      background-size: cover;
+      background-attachment: fixed;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 100px 10px;
+      text-align: var(--center);
+      color: var(--whitebg);
+      opacity: 0.99;
+    }
+  
+    .mission_vission_section .inner {
+      background-color: var(--whitebg);
+      padding: 10px;
+      border-radius: 10px;
+      opacity: 1;
+      color: var(--darkGreenBg);
+      box-shadow: var(--boxShadow);
+      margin-top: 10px;
+    }
+  
+    /* end:mission_vission_section */
 }
